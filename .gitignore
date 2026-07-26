@@ -1,0 +1,10 @@
+# Arquivos de ambiente e chaves secretas
+.env
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# Modelos treinados (.pkl) salvos dentro das pastas de setor
+# (Caso queira que o GitHub Actions gere os modelos na nuvem)
+Setor_*/
