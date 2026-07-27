@@ -1,3 +1,125 @@
+# 📊 Intelligent Investment Dashboard
+
+> Automated quantitative analysis and market monitoring platform powered by Artificial Intelligence and Machine Learning.
+
+---
+
+## About the Project
+
+The **Intelligent Investment Dashboard** is an end-to-end platform designed to help investors and analysts monitor financial assets from the Brazilian stock market (B3), including sectors such as Energy, Mining, and Technology.
+
+The system combines automated data collection, database management, machine learning models, and interactive dashboards to analyze market behavior and generate predictive insights.
+
+Using statistical models and machine learning algorithms (**Random Forest and XGBoost**), the platform processes technical indicators and macroeconomic data to identify potential market trends and provide automated signals through a web dashboard and Telegram notifications.
+
+---
+
+## System Architecture and Features
+
+The project was designed with a modular, scalable architecture using a relational cloud database (**Supabase**).
+
+### Web Dashboard (`dashboard.py`)
+
+Built with **Streamlit**, the dashboard provides:
+
+* **Dynamic Filters and Data Selection**
+  * Automated selection of market sectors and companies directly from the database.
+
+* **Historical Analysis and Trading Signals**
+  * Interactive Plotly visualizations showing asset price movements and moments where the AI model detected potential opportunities.
+
+* **Performance Analysis and Backtesting**
+  * Historical evaluation of generated signals, including:
+    * Correct predictions
+    * Incorrect predictions
+    * Risk protection analysis
+    * Opportunity detection
+    * Dynamic decision thresholds
+
+* **AI Performance Monitoring**
+  * Model accuracy analysis and comparison between conservative and aggressive strategies.
+
+* **Automated Alert System**
+  * Telegram integration allowing users to subscribe and receive personalized market notifications.
+
+---
+
+## Backend and Artificial Intelligence Pipeline
+
+### Data Collection (`coleta.py`)
+
+Automated pipeline responsible for collecting:
+
+* Historical stock market data
+* Currency information
+* Commodity indicators
+* Macroeconomic variables
+
+---
+
+### Machine Learning Pipeline (`treina_modelo.py`)
+
+Complete training workflow responsible for:
+
+* Data preprocessing
+* Feature engineering
+* Machine learning model training
+* Adaptive predictive models by sector
+* Dynamic threshold optimization
+
+Models implemented:
+
+* Random Forest
+* XGBoost
+
+---
+
+### Telegram Automation Bot (`robo_telegram.py`)
+
+Autonomous notification system responsible for:
+
+* Generating sector reports
+* Formatting analytical summaries
+* Sending automated alerts directly to registered users
+
+---
+
+## 🖼️ Platform Demonstration
+
+![Dashboard Screenshot](img/dashboard_1.png)
+
+![Dashboard Screenshot](img/dashboard_2.png)
+
+![Generated Signals Performance Analysis](img/desempenho.png)
+
+![Model Performance Evaluation](img/avaliacao.png)
+
+---
+
+## Technologies Used
+
+* **Python** - Main programming language
+* **Streamlit** - Interactive web dashboard
+* **Scikit-Learn & XGBoost** - Machine Learning models
+* **Plotly** - Interactive data visualization
+* **Supabase** - Cloud relational database
+* **Telegram API** - Automated notification system
+* **GitHub Actions** - Workflow automation and scheduled pipelines
+
+---
+
+## Key Skills Demonstrated
+
+✔ Python Development  
+✔ Machine Learning Pipeline Development  
+✔ Data Collection Automation  
+✔ Data Processing and Feature Engineering  
+✔ Database Integration  
+✔ Dashboard Development  
+✔ API Integration  
+✔ Automated Reporting Systems
+
+#### Versão em português
 # 📊 Painel Inteligente de Investimentos
 
 > Terminal quantitativo de análise preditiva e monitoramento setorial automatizado por Inteligência Artificial e Machine Learning.
@@ -28,9 +150,6 @@ O projeto foi estruturado para ser modular, dinâmico e escalável através de u
 ---
 
 ## 🖼️ Demonstração da Plataforma
-
-![Print do Dashboard](img/dashboard_1.png)
-<!-- Exemplo: ![Print do Dashboard](img/dashboard_1.png) -->
 
 ![Print do Dashboard](img/dashboard_2.png)
 
