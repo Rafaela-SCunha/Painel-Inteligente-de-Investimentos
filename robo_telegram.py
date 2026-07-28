@@ -37,7 +37,10 @@ def enviar_mensagem_telegram(chat_id, mensagem):
 def gerar_alerta_setorial(ticker):
     # 1. Consulta dinâmica no Supabase para descobrir o Setor e o Nome da Empresa
     res_ativo = supabase.table("cad_ativos").select("nome, setor").eq("ticker", ticker).execute()
-    
+
+    diretorio_base = os.path.dirname(os.path.abspath(__file__))
+    pasta_modelos = "modelos"
+
     if not res_ativo.data:
         return f"⚠️ Erro: O ativo {ticker} não foi encontrado no cadastro do banco de dados."
         
