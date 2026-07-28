@@ -5,10 +5,10 @@ import os
 import joblib
 import warnings
 import requests
-from dotenv import load_dotenv
+
 
 # Carrega as chaves e a conexão com o banco
-load_dotenv()
+TELEGRAM_TOKEN = os.getenv("TELEGRAM_TOKEN")
 warnings.filterwarnings('ignore')
 sys.path.append(os.path.abspath(os.path.dirname(__file__)))
 
